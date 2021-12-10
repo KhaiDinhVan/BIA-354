@@ -1,0 +1,24 @@
+{ "class": "GraphLinksModel",
+  "copiesArrays": true,
+  "copiesArrayObjects": true,
+  "copiesKey": false,
+  "linkFromPortIdProperty": "fromPort",
+  "linkToPortIdProperty": "toPort",
+  "nodeDataArray": [ 
+{"text":"Customer", "fields":[ {"name":"Customer id", "isUnderline":true},{"isUnderline":false, "name":"name (first name, last_name)"},{"name":"phone", "isUnderline":false},{"isUnderline":false, "name":"email"},{"name":"address (street, city, state, zipcode)", "isUnderline":false} ], "location":{"class":"go.Point", "x":-301, "y":-326.5}, "key":-1, "figure":"Rectangle", "type-figure":"Rectangle"},
+{"text":"Invoice ", "fields":[ {"isUnderline":true, "name":"invoice id"},{"name":"date_in", "isUnderline":false},{"isUnderline":false, "name":"date_out (o)"},{"name":"quantity", "isUnderline":false} ], "location":{"class":"go.Point", "x":43.52823249999989, "y":-313.947436875}, "key":-2},
+{"text":"Employee", "fields":[ {"name":"employee id", "isUnderline":true},{"isUnderline":false, "name":"name (first_name, LAST_NAME)"},{"isUnderline":false, "name":"date_hired"},{"isUnderline":false, "name":"address (street, city, state, zipcode)"} ], "location":{"class":"go.Point", "x":393, "y":-310.5}, "key":-3},
+{"text":"Item", "fields":[ {"name":"item_id", "isUnderline":true},{"isUnderline":false, "name":"desciption "},{"isUnderline":false, "name":"price"} ], "location":{"class":"go.Point", "x":-10.838045824687526, "y":124.45491088757814}, "key":-4},
+{"text":"Complaint", "fields":[ {"isUnderline":true, "name":"complaint_id"},{"name":"complain_date", "isUnderline":false},{"name":"complain_details", "isUnderline":false} ], "location":{"class":"go.Point", "x":-48.59079839980086, "y":-37.58769636748622}, "key":-5, "figure":"RoundedRectangle", "type-figure":"RoundedTopRectangle"},
+{"text":"Invoice_item", "fields":[ {"name":"invoice_id", "isUnderline":true},{"isUnderline":true, "name":"item_id"},{"isUnderline":false, "name":"quanity "} ], "location":{"class":"go.Point", "x":315, "y":118.5}, "key":-6, "figure":"RoundedRectangle", "type-figure":"RoundedTopRectangle"}
+ ],
+  "linkDataArray": [ 
+{"from":-1, "to":-2, "fromPort":"", "toPort":"", "text":"places", "fromArrow":"DoubleLine", "toArrow":"LineFork", "points":[-58.69233703613281,-249.6480972290039,-48.69233703613281,-249.6480972290039,-7.582052268066462,-249.6480972290039,-7.582052268066462,-249.53325840820312,33.52823249999989,-249.53325840820312,43.52823249999989,-249.53325840820312]},
+{"from":-2, "to":-3, "fromPort":"", "toPort":"", "text":"assigns", "fromArrow":"BackwardLineFork", "toArrow":"CircleLine", "points":[145.5282324999999,-249.53325840820312,155.5282324999999,-249.53325840820312,269.2641162499999,-249.53325840820312,269.2641162499999,-246.08582153320313,383,-246.08582153320313,393,-246.08582153320313]},
+{"from":-3, "to":-3, "fromPort":"", "toPort":"", "text":"manage", "fromArrow":"BackwardCircleFork", "toArrow":"CircleLine", "points":[581.8461303710938,-181.67164306640626,581.8461303710938,-151.67164306640626,665.3076629638672,-151.67164306640626,665.3076629638672,-182.05447875976563,665.3076629638672,-212.437314453125,635.3076629638672,-212.437314453125]},
+{"from":-2, "to":-5, "fromPort":"", "toPort":"", "text":"is a part of", "fromArrow":"DoubleLine", "toArrow":"CircleFork", "points":[77.52823249999989,-185.11907994140626,77.52823249999989,-175.11907994140626,77.52823249999989,-111.35338815444624,32.20801955267309,-111.35338815444624,32.20801955267309,-47.58769636748622,32.20801955267309,-37.58769636748622]},
+{"from":-1, "to":-5, "fromPort":"", "toPort":"", "text":"comment", "fromArrow":"DoubleLine", "toArrow":"CircleFork", "points":[-179.8461685180664,-172.79619445800782,-179.8461685180664,-162.79619445800782,-179.8461685180664,-105.19194541274702,-8.191389423563884,-105.19194541274702,-8.191389423563884,-47.58769636748622,-8.191389423563884,-37.58769636748622]},
+{"from":-4, "to":-5, "fromPort":"", "toPort":"", "text":"is included in", "fromArrow":"DoubleLine", "toArrow":"CircleFork", "points":[40.161954175312474,124.45491088757814,40.161954175312474,114.45491088757814,40.161954175312474,96.16006142264361,12.008315064554608,96.16006142264361,12.008315064554608,77.86521195770908,12.008315064554608,67.86521195770908]},
+{"from":-2, "to":-6, "fromPort":"", "toPort":"", "text":"has", "fromArrow":"DoubleLine", "toArrow":"CircleFork", "points":[111.52823249999989,-185.11907994140626,111.52823249999989,-175.11907994140626,111.52823249999989,-33.30953997070313,379.453125,-33.30953997070313,379.453125,108.5,379.453125,118.5]},
+{"from":-4, "to":-6, "fromPort":"", "toPort":"", "text":"included in ", "fromArrow":"DoubleLine", "toArrow":"LineFork", "points":[91.16195417531247,176.43136505017577,101.16195417531247,176.43136505017577,203.08097708765624,176.43136505017577,203.08097708765624,171.22645416259763,305,171.22645416259763,315,171.22645416259763]}
+ ]}
