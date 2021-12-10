@@ -1,0 +1,23 @@
+{
+  "short_name": "Project1",
+  "name": "Project1",
+  "description": "Project1",
+  "display": "standalone",
+  "start_url": "index.html",
+  "background_color": "black",
+  "theme_color": "black",
+  "icons": [
+    {
+      "src": "nsb/images/72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "nsb/images/192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "nsb/images/512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
